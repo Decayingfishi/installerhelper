@@ -8,7 +8,7 @@ choicing = input("p or a or q: ")
 
 if choicing == "p":
     appc= input("app name in pacman:")
-    subprocess.run(["sudo", "pacman", "-S", appc])
+    subprocess.run(["sudo", "pacman", "-S", "--needed", appc])
 elif choicing == "a":
     app = input("app name on aur:")
     print(f"App: {app}")
